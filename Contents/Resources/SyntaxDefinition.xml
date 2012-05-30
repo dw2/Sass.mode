@@ -8,22 +8,22 @@
 	</head>  
 
 	<states>
-		<default id="Base" color="#222" inverted-color="#eee" font-weight="normal" font-style="normal">  
+		<default id="Base" color="#222" inverted-color="#eee" font-weight="normal" font-style="normal" scope="meta.default">  
             
 			<!-- Help correct some habits from years of writing CSS -->
-			<keywords id="Bad Habits" color="#ff0000" font-style="normal" font-weight="bold">
+			<keywords id="Bad Habits" useforautocomplete="yes" scope="string.regex">
 					<regex>(;)(?=$)</regex>
 			</keywords>
 			
 			<!-- Get comments and strings from the CSS mode -->
 			<state-link state="AutodocComment" mode="CSS" />
 			
-			<state id="OutputComment" type="comment" color="#236E25" font-weight="normal" font-style="italic">
+			<state id="OutputComment" type="comment" scope="string.regex" font-style="italic">
 				<begin><regex>^\/\*</regex></begin>
 				<end><regex>(?:[\r\n](?!\s))|\*\/</regex></end>
 			</state>
 			
-			<state id="InternalComment" type="comment" color="#236E25" font-weight="normal" font-style="italic">
+			<state id="InternalComment" type="comment" scope="string.regex" font-style="italic">
 				<begin><regex>\/\/</regex></begin>
 				<end><regex>\S[\r\n]</regex></end>
 			</state>
@@ -35,13 +35,13 @@
 			https://github.com/charlesr/ruby-sass-tmbundle/blob/master/Syntaxes/Ruby%20Sass.tmLanguage
 			-->
 			<!--
-			<state id="Comment" type="comment" color="#236E25" font-weight="normal" font-style="italic">
+			<state id="Comment" type="comment" scope="string.regex" font-style="italic">
 				<begin><regex>^(\/\/|\/\*)</regex></begin>
 				<end><regex>^(?!\s)</regex></end>
 			</state>
 			-->
 				
-			<state id="String" type="string" color="#760f15" font-weight="normal" font-style="normal">
+			<state id="String" type="string" scope="string.regex">
 				<begin>
 					<string>"</string>
 				</begin>
@@ -53,7 +53,7 @@
 				
 			<state-link state="SingleString" mode="CSS" />
 							
-			<keywords id="Properties" color="#7b35b3" font-style="normal" useforautocomplete="yes">
+			<keywords id="Properties" scope="style.property.name" useforautocomplete="yes">
 				<string>_background</string>
 				<string>_filter</string>
 				<string>filter</string>
@@ -153,6 +153,7 @@
 				<string>text-decoration</string>
 				<string>text-decoration-color</string>
 				<string>text-indent</string>
+				<string>text-overflow</string>
 				<string>text-shadow</string>
 				<string>text-transform</string>
 				<string>top</string>
@@ -296,7 +297,7 @@
 			</keywords>
 							
 			<!-- Attributes -->
-			<keywords id="Attributes" font-style="normal" color="#689d36" useforautocomplete="yes">
+			<keywords id="Attributes" scope="style.value.keyword" useforautocomplete="yes">
 				<regex>(?:\s+)(?i)(monospace)</regex>	
 				<regex>(?:\s+)(?i)(sans-serif)</regex>	
 				<regex>(?:\s+)(?i)(serif)</regex>	
@@ -477,6 +478,7 @@
 				<regex>(?:\s+)(?i)(wider)</regex>
 				<regex>(?:\s+)(?i)(break)</regex>
 				<regex>(?:\s+)(?i)(url)</regex>
+				<regex>(?:\s+)(?i)(image-url)</regex>
 				<regex>(?:\s+)(?i)(aqua)</regex>
 				<regex>(?:\s+)(?i)(black)</regex>
 				<regex>(?:\s+)(?i)(blue)</regex>
@@ -621,6 +623,7 @@
 				<regex>(?:\s+)(?i)(intrinsic)</regex>
 				<regex>(?:\s+)(?i)(min-intrinsic)</regex>
 				<regex>(?:\s+)(?i)(-webkit-baseline-middle)</regex>
+				<regex>(?:\s+)(?i)(clip)</regex>
 				<regex>(?:\s+)(?i)(hidden)</regex>
 				<regex>(?:\s+)(?i)(overlay)</regex>
 				<regex>(?:\s+)(?i)(fast)</regex>
@@ -649,37 +652,37 @@
 				<regex>(?:\s+)(?i)(end)</regex>
 			</keywords>
 				
-			<keywords id="Override" color="#ff0000" font-style="italic">
+			<keywords id="Override" scope="meta.important">
 				<regex>(?:\s+)(?i)(!important)</regex>
 				<regex>(?:\s+)(?i)(!default)</regex>
 			</keywords>
 	
-			<state id="Variables" color="#3c75a0" font-style="normal" font-weight="normal">
+			<state id="Variables" scope="style.value.string">
 			  <begin><regex>\$</regex></begin>
 				<end><regex>(?:)[\d\w-]+</regex></end>
 			</state>
 				
-			<state id="Interpolation" color="#3A1D72" font-weight="bold" font-style="normal">
+			<state id="Interpolation" scope="string">
 				<begin>
 					<string>#{</string>
 				</begin>
 				<end>
 					<string>}</string>
 				</end>
-				<keywords id="Interpolate" color="#6d9fc4" font-style="normal" useforautocomplete="no">
+				<keywords id="Interpolate" scope="string.regex" useforautocomplete="no">
 					<regex>(\$[\d\w-]+)</regex>
 				</keywords>
 			</state>
 				
-			<keywords id="Digits" color="#00f" font-style="normal" useforautocomplete="yes">
+			<keywords id="Digits" scope="style.value.numeric" useforautocomplete="yes">
 				<regex>(?:\s|\(|-|\.|,)([\d]+(?:px|pt|em|rem|ex|cm|in|mm|pc|%)?)</regex>
 			</keywords>
 			
-			<keywords id="Colors" color="#760f15" font-style="normal" useforautocomplete="no">
+			<keywords id="Colors" scope="style.value.color.rgb-value" useforautocomplete="no">
 				<regex>(#[\da-fA-F]{3,6})</regex>
 			</keywords>
 				
-			<keywords id="Control Directives" color="#3A1D72" font-style="normal" font-weight="bold">
+			<keywords id="Control Directives" scope="style.at-rule">
 				<string>@debug</string>
 				<string>@else</string>
 				<regex>(\@else[\sif]+)</regex>
@@ -699,16 +702,16 @@
 				<string>@while</string>
 			</keywords>
 				
-			<keywords id="Import Filenames" color="#760f15" font-weight="normal" font-style="normal">
+			<keywords id="Import Filenames" scope="style.at-rule">
 				<regex>@import\s([\w\d\/_-]+)</regex>
 			</keywords>
 				
-			<state id="Mixin Shorthand" color="#3A1D72" font-style="normal" font-weight="bold">
+			<state id="Mixin Shorthand" scope="style.property.name">
 				<begin><regex>\+|\=</regex></begin>
 				<end><regex>[\w\d-]+</regex></end>
 			</state>
 				
-			<keywords id="Sass functions" font-style="normal" font-weight="bold" color="#3A1D72" useforautocomplete="yes">
+			<keywords id="Sass functions" scope="style.value.keyword" useforautocomplete="yes">
 				<!-- RGB Function -->
 				<regex>(?::\s+)(?i)(rgb)(?:\()</regex>
 				<regex>(?::\s+)(?i)(rgba)(?:\()</regex>

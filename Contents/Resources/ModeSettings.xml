@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-  <template>template.sass</template>
   <recognition>
     <extension>sass</extension>
-    <extension casesensitive="no">sass</extension>
+    <filename>template.sass</filename>
   </recognition>
 </settings>

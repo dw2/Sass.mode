@@ -91,6 +91,7 @@ text-align
 text-decoration
 text-decoration-color
 text-indent
+text-overflow
 text-shadow
 text-transform
 top
