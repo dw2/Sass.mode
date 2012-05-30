@@ -241,7 +241,7 @@
         <string>radio</string>
         <string>push-button</string>
         <string>square-button</string>
-        <string>button</string>
+        <!--<string>button</string>-->
         <string>button-bevel</string>
         <string>listbox</string>
         <string>listitem</string>
@@ -271,7 +271,7 @@
         <string>searchfield-results-button</string>
         <string>searchfield-cancel-button</string>
         <string>textfield</string>
-        <string>textarea</string>
+        <!--<string>textarea</string>-->
         <string>copy</string>
         <string>source-over</string>
         <string>source-in</string>
