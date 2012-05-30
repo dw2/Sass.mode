@@ -4,6 +4,7 @@ background-color
 background-image
 background-position
 background-repeat
+behavior
 border-collapse
 border-spacing
 border-top-color
