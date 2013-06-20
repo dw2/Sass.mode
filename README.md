@@ -1,42 +1,40 @@
 # Sass.mode
 
----
 ### Compatibility
 
-**Coda** http://www.panic.com/coda/
++ **[Coda 2](http://www.panic.com/coda/)**
 
----
 ### Supported Extensions
 
- + .sass
++ .sass
 
----
 ### Installation
 
-**git clone (or download and copy) "Sass.mode" folder to "~/Library/Application Support/Coda/Modes"**
+You can do it via terminal if you think that you're in 80's
 
----
-### Notes
+	cd ~/Library/Application\ Support/Coda/Modes
+	git clone git://github.com/Grawl/Sass.mode.git Sass.mode
 
-  + Create folder(s) if needed.
-  + You might need to rename the folder to "Sass.mode" (downloaded from source)
-  + In the Alternate INSTALL, you'll need to do a "Show Package Content" on the "Coda" Application.
+Or you can do it like we do it in our shiny future:
 
----
++ [download zipball](https://github.com/Grawl/Sass.mode/archive/master.zip) of this repository
++ unzip and remove “-master” from folder name so it transforms into Coda Mode, because file name will be `Sass.mode`
++ open it with double click or ⌘↓ and Coda will move it into `~/Library/Application Support/Coda/Modes` and relaunch itself
+
+Also you can move `Sass.mode` to `Applications/Coda 2/Contents/Rescourses` if you have troubles with your Library or something other.
+
 ### ToDo
 
-  + Variables autocomplete
-  + Mixins autocomplete
-  + Grouping parameters in autocomplete (e.g. only colors in `color: ` suggestions)
++ Variables autocomplete
++ Mixins autocomplete
++ Grouping values with parameters in autocomplete like Coda [does it with colors](http://d.pr/i/Ctdu) in CSS mode.
 
----
 ### Credit for the source repos
 
-  + http://upstruct.svn.beanstalkapp.com/sass/ (Author: Tom-Marius Olsen)
-  + http://github.com/Brajeshwar/Sass.mode
-  + https://github.com/ry5n/ry5n-sass.mode
++ [Author: Tom-Marius Olsen](http://upstruct.svn.beanstalkapp.com/sass/)
++ [@Brajeshwar/Sass.mode](http://github.com/Brajeshwar/Sass.mode)
++ [@ry5n/ry5n-sass.mode](https://github.com/ry5n/ry5n-sass.mode)
 
----
 ### References
 
-More about Mode Customization: http://www.codingmonkeys.de/subethaedit/mode.html
+[More about Mode Customization](http://www.codingmonkeys.de/subethaedit/mode.html)
