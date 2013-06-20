@@ -1,6 +1,6 @@
 # Sass.mode
 
-Panic says that “Coda 2 ships with Sass suppor out-of-box”. Bullshit. It ships with SCSS support, fallback of Sass. Originally Sass have indented syntax, like Stylus. And this Coda Mode makes possible to white Sass stylesheets with comfort (as we can provide it).
+Panic says that “Coda 2 ships with Sass support out-of-box”. Bullshit. It ships with SCSS support, CSS-like fallback of Sass. Originally Sass have indented syntax, like Stylus. And this Coda Mode makes possible to white Sass stylesheets with comfort (as we can provide it).
 
 ### Compatibility
 
