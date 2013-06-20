@@ -1,12 +1,14 @@
 # Sass.mode
 
+Panic says that “Coda 2 ships with Sass suppor out-of-box”. Bullshit. It ships with SCSS support, fallback of Sass. Originally Sass have indented syntax, like Stylus. And this Coda Mode makes possible to white Sass stylesheets with comfort (as we can provide it).
+
 ### Compatibility
 
 + **[Coda 2](http://www.panic.com/coda/)**
 
 ### Supported Extensions
 
-+ .sass
++ .sass with indented syntax
 
 ### Installation
 
@@ -17,7 +19,7 @@ You can do it via terminal if you think that you're in 80's
 
 Or you can do it like we do it in our shiny future:
 
-+ [download zipball](https://github.com/Grawl/Sass.mode/archive/master.zip) of this repository
++ [download zipball](master.zip) of this repository
 + unzip and remove “-master” from folder name so it transforms into Coda Mode, because file name will be `Sass.mode`
 + open it with double click or ⌘↓ and Coda will move it into `~/Library/Application Support/Coda/Modes` and relaunch itself
 
