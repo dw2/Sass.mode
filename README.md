@@ -23,6 +23,13 @@
   + In the Alternate INSTALL, you'll need to do a "Show Package Content" on the "Coda" Application.
 
 ---
+### ToDo
+
+  + Variables autocomplete
+  + Mixins autocomplete
+  + Grouping parameters in autocomplete (e.g. only colors in `color: ` suggestions)
+
+---
 ### Credit for the source repos
 
   + http://upstruct.svn.beanstalkapp.com/sass/ (Author: Tom-Marius Olsen)
