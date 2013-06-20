@@ -553,7 +553,7 @@
       -->
 
       <keywords id="Digits" scope="style.value.numeric" useforautocomplete="yes">
-        <regex>(?:\s|\(|-|\.|,)([\d]+(?:px|pt|em|rem|ex|cm|in|mm|pc|s|ms|Hz|kHz|%|deg|rad|grad|turn|vw|vh|%)?)</regex>
+        <regex>(?:\s|\(|-|\.|,)([\d]+(?:px|pt|em|rem|ex|ch|cm|in|mm|dpi|dpcm|dppx|pc|s|ms|Hz|kHz|%|deg|rad|grad|turn|vw|vh|vmin|vmax|%)?)</regex>
       </keywords>
 
       <keywords id="Colors" scope="style.value.color.rgb-value" useforautocomplete="no">
