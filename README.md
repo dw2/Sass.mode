@@ -34,8 +34,10 @@ Also you can move `Sass.mode` to `Applications/Coda 2/Contents/Rescourses` if yo
 ### Credit for the source repos
 
 + [Author: Tom-Marius Olsen](http://upstruct.svn.beanstalkapp.com/sass/)
-+ [@Brajeshwar/Sass.mode](http://github.com/Brajeshwar/Sass.mode)
-+ [@ry5n/ry5n-sass.mode](https://github.com/ry5n/ry5n-sass.mode)
++ [@Brajeshwar/Sass.mode](http://github.com/Brajeshwar/Sass.mode) — SCSS mode
++ [@ry5n/ry5n-sass.mode](https://github.com/ry5n/ry5n-sass.mode) — Sass mode
++ [@dw2/Sass.mode](https://github.com/dw2/Sass.mode) – Coda 2 support for Coda mode
++ [@grawl/Sass.mode](https://github.com/Grawl/Sass.mode) – Autocomplete fixes
 
 ### References
 
