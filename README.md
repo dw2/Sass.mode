@@ -43,4 +43,4 @@ Also you can move `Sass.mode` to `Applications/Coda 2/Contents/Rescourses` if yo
 
 [More about Mode Customization](http://www.codingmonkeys.de/subethaedit/mode.html)
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/grawl/sass.mode/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/8ff1ec9ca73e6329bbcf859342da01d9 "githalytics.com")](http://githalytics.com/Grawl/Sass.mode)
